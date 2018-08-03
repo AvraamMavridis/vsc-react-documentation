@@ -6,7 +6,7 @@ module.exports = {
   The constructor for a React component is called before it is mounted. When implementing the constructor for a \`React.Component\` subclass, you should call \`super(props)\` before any other statement. Otherwise, \`this.props\` will be \`undefined\` in the \`constructor\`, which can lead to bugs.
   
   [Read More](https://reactjs.org/docs/react-component.html#constructor)`,
-  
+
   render: `**render - React Documentation**
   
   The \`render()\` method is the only required method in a class component.
@@ -129,4 +129,4 @@ The \`render()\` function should be pure, meaning that it does not modify compon
 
   [Read More](https://reactjs.org/docs/react-component.html#setstate)
   `
-}
+};

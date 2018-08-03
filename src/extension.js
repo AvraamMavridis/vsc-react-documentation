@@ -1,10 +1,10 @@
 const vscode = require('vscode');
-const data = require('./src/data');
+const data = require('./data');
 
 class Provider {
   provideHover(document, position) {
     const wordRange = document.getWordRangeAtPosition(position);
-    let word = wordRange ? document.getText(wordRange) : '';
+    const word = wordRange ? document.getText(wordRange) : '';
     const info = data[word] || '';
     const md = new vscode.MarkdownString(info);
     return new vscode.Hover(md);
