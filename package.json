@@ -1,12 +1,19 @@
 {
     "name": "vsc-react-documentation",
-    "displayName": "vsc-react-documentation",
-    "description": "Display the support of the css",
+    "displayName": "React Documentation",
+    "description": "Display popup with documentation for the various React methods/properties",
     "version": "1.0.0",
     "publisher": "avraammavridis",
     "engines": {
         "vscode": "^1.25.0"
     },
+    "icon": "images/icon.png",
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/AvraamMavridis/vsc-react-documentation"
+    },
+    "bugs": "https://github.com/AvraamMavridis/vsc-sort-documentation/issues",
+    "license": "MIT",
     "keywords": [
         "React",
         "Documentation",
