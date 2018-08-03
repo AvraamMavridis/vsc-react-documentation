@@ -1,12 +1,17 @@
 {
-    "name": "vsc-css-support",
-    "displayName": "vsc-css-support",
+    "name": "vsc-react-documentation",
+    "displayName": "vsc-react-documentation",
     "description": "Display the support of the css",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "avraammavridis",
     "engines": {
         "vscode": "^1.25.0"
     },
+    "keywords": [
+        "React",
+        "Documentation",
+        "Javascript"
+    ],
     "categories": [
         "Other"
     ],
@@ -14,17 +19,9 @@
         "onLanguage:javascript"
     ],
     "main": "./extension",
-    "contributes": {
-        "commands": [
-            {
-                "command": "extension.sayHello",
-                "title": "Hello World CSS"
-            }
-        ]
-    },
+    "contributes": {},
     "scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "node ./node_modules/vscode/bin/test"
+        "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "devDependencies": {
         "typescript": "^2.6.1",
@@ -32,8 +29,5 @@
         "eslint": "^4.11.0",
         "@types/node": "^7.0.43",
         "@types/mocha": "^2.2.42"
-    },
-    "dependencies": {
-        "axios": "^0.18.0"
     }
 }
