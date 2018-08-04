@@ -128,5 +128,12 @@ The \`render()\` function should be pure, meaning that it does not modify compon
   Think of \`setState()\` as a request rather than an immediate command to update the component. For better perceived performance, React may delay it, and then update several components in a single pass. React does not guarantee that the state changes are applied immediately.
 
   [Read More](https://reactjs.org/docs/react-component.html#setstate)
+  `,
+
+  createContext: `**createContext - React Documentation**
+
+  Creates a \`{ Provider, Consumer }\` pair. When React renders a context \`Consumer\`, it will read the current context value from the closest matching Provider above it in the tree.
+
+  The \`defaultValue\` argument is only used by a \`Consumer\` when it does not have a matching \`Provider\` above it in the tree. This can be helpful for testing components in isolation without wrapping them. Note: passing undefined as a \`Provider\` value does not cause \`Consumers\` to use \`defaultValue\`.
   `
 };
