@@ -21,3 +21,4 @@ function activate(context) {
 }
 
 exports.activate = activate;
+exports.Provider = Provider;

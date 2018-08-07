@@ -14,24 +14,36 @@
 	},
 	"bugs": "https://github.com/AvraamMavridis/vsc-sort-documentation/issues",
 	"license": "MIT",
-	"keywords": [ "React", "Documentation", "Javascript" ],
-	"categories": [ "Other" ],
-	"activationEvents": [ "onLanguage:javascript" ],
+	"keywords": [
+		"React",
+		"Documentation",
+		"Javascript"
+	],
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:javascript"
+	],
 	"main": "./src/extension",
 	"contributes": {},
 	"scripts": {
 		"postinstall": "node ./node_modules/vscode/bin/install",
-		"lint": "eslint ./src --fix"
+		"lint": "eslint ./src --fix",
+		"test": "NODE_ENV=test jest --config jest.config.js"
 	},
 	"devDependencies": {
 		"@types/mocha": "^2.2.42",
 		"@types/node": "^7.0.43",
+		"assert": "^1.4.1",
 		"babel-eslint": "^8.2.6",
 		"eslint": "^4.11.0",
 		"eslint-config-airbnb-base": "^13.0.0",
 		"eslint-config-avraam": "^1.0.0",
 		"eslint-plugin-import": "^2.13.0",
+		"jest": "^23.4.2",
+		"mocha": "^5.2.0",
 		"typescript": "^2.6.1",
-		"vscode": "^1.1.6"
+		"vscode": "^1.1.18"
 	}
 }
