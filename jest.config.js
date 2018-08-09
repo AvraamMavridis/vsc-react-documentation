@@ -5,5 +5,9 @@ module.exports = {
   modulePaths: [ '<rootDir>/src', '<rootDir>/test' ],
   modulePathIgnorePatterns: [ '<rootDir>/node_modules' ],
   coverageDirectory: './coverage/',
-  collectCoverage: true
+  collectCoverage: true,
+  collectCoverageFrom: [
+    '<rootDir>/src',
+    '<rootDir>/test'
+  ]
 };
