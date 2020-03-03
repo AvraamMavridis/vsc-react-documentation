@@ -34,7 +34,7 @@
 		"test:watch": "NODE_ENV=test jest --watch --config jest.config.js"
 	},
 	"devDependencies": {
-		"@types/mocha": "^5.2.5",
+		"@types/mocha": "^7.0.2",
 		"@types/node": "^10.5.7",
 		"assert": "^1.4.1",
 		"babel-eslint": "^9.0.0",
